@@ -35,7 +35,7 @@
 */**/lib/*
 */**/DS_tmp/*
 */**/ds-cpp/*
-*/**/model/*.mpl
 
 *_run.rb
 xcuserdata/*
+TireClassMapleDescription.mpl
