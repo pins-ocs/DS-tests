@@ -1,0 +1,23 @@
+fo_vars := [s(t), n(t), alpha(t), V(t), lambda(t), omega(t)];
+u_vars := [delta(t), Sr(t), Sf(t)];
+fo_eqns := [-kappa(s(t))*diff(s(t),t)*n(t)-lambda(t)*V(t)*sin(alpha(t))-V(t)*
+cos(alpha(t))+diff(s(t),t), lambda(t)*V(t)*cos(alpha(t))+diff(n(t),t)-V(t)*sin
+(alpha(t)), diff(alpha(t),t)+kappa(s(t))*diff(s(t),t)-omega(t), omega(t)*M*V(t
+)*lambda(t)+M*diff(V(t),t)-Sf(t)+delta(t)*Ff(t)-Sr(t), omega(t)*M*V(t)-M*diff(
+V(t),t)*lambda(t)-M*V(t)*diff(lambda(t),t)-delta(t)*Sf(t)-Ff(t)-Fr(t), IZ*diff
+(omega(t),t)-a*Ff(t)-a*delta(t)*Sf(t)+b*Fr(t)];
+tire_forces := Fr(t) = KLr*(omega(t)*b/V(t)+lambda(t)), Ff(t) = KLf*(-omega(t)
+*a/V(t)+delta(t)+1/V(t)^2*delta(t)*omega(t)^2*a^2+lambda(t));
+u := proc () option remember; 'procname(args)' end proc; u(t) := V(t)*cos(
+lambda(t));
+v := proc () option remember; 'procname(args)' end proc; v(t) := -V(t)*sin(
+lambda(t));
+lambdaR := omega(t)*b/V(t)+lambda(t);
+lambdaF := -omega(t)*a/V(t)+delta(t)+1/V(t)^2*delta(t)*omega(t)^2*a^2+lambda(t
+);
+ground_vars := [x(t), y(t), psi(t)];
+ground_eqns := [V(t)-cos(psi(t))*diff(x(t),t)-sin(psi(t))*diff(y(t),t), sin(
+psi(t))*diff(x(t),t)-cos(psi(t))*diff(y(t),t)-V(t)*lambda(t), omega(t)-diff(
+psi(t),t)];
+vehicle_data := [a = 1.3, b = 1.0, M = 1, IZ = 1.2, KLr = 120.0, KLf = 100.0,
+Dyr = 1.2, Dyf = 1.2, beta = .6];

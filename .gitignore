@@ -1,3 +1,5 @@
+.DS_Store
+
 # Compiled Object files
 *.slo
 *.lo
@@ -26,3 +28,14 @@
 *.exe
 *.out
 *.app
+
+
+#Generated files
+*/**/data/*
+*/**/lib/*
+*/**/DS_tmp/*
+*/**/ds-cpp/*
+*/**/model/*.mpl
+
+*_run.rb
+xcuserdata/*

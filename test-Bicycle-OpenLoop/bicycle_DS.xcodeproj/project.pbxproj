@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DCB519018C4AED30034A0AF /* MechatronixCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518818C4AED30034A0AF /* MechatronixCore.framework */; };
+		8DCB519118C4AED40034A0AF /* MechatronixInterfaceLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518918C4AED30034A0AF /* MechatronixInterfaceLua.framework */; };
+		8DCB519218C4AED40034A0AF /* MechatronixInterfaceMruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518A18C4AED30034A0AF /* MechatronixInterfaceMruby.framework */; };
+		8DCB519318C4AED40034A0AF /* MechatronixManufacturing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518B18C4AED30034A0AF /* MechatronixManufacturing.framework */; };
+		8DCB519418C4AED40034A0AF /* MechatronixODE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518C18C4AED30034A0AF /* MechatronixODE.framework */; };
+		8DCB519518C4AED40034A0AF /* MechatronixRoad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518D18C4AED30034A0AF /* MechatronixRoad.framework */; };
+		8DCB519618C4AED40034A0AF /* MechatronixSolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518E18C4AED30034A0AF /* MechatronixSolver.framework */; };
+		8DCB519718C4AED40034A0AF /* MechatronixVehicle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518F18C4AED30034A0AF /* MechatronixVehicle.framework */; };
+		8DE177EB18C0E35700408C17 /* Bicycle_Main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8DE177E518C0E35700408C17 /* Bicycle_Main.cc */; };
+		8DE177EC18C0E35700408C17 /* Bicycle.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8DE177E718C0E35700408C17 /* Bicycle.cc */; };
+		8DE177ED18C0E35700408C17 /* Bicycle_Methods.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8DE177E918C0E35700408C17 /* Bicycle_Methods.cc */; };
+		8DE177EF18C0E36400408C17 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE177EE18C0E36400408C17 /* Accelerate.framework */; };
+		D94C1A7918E1C9F200B5E3B4 /* Bicycle_ruby_dll.cc in Sources */ = {isa = PBXBuildFile; fileRef = D94C1A7818E1C9F200B5E3B4 /* Bicycle_ruby_dll.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DE177D618C0E33500408C17 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8DCB518818C4AED30034A0AF /* MechatronixCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixCore.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixCore.framework; sourceTree = "<absolute>"; };
+		8DCB518918C4AED30034A0AF /* MechatronixInterfaceLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixInterfaceLua.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixInterfaceLua.framework; sourceTree = "<absolute>"; };
+		8DCB518A18C4AED30034A0AF /* MechatronixInterfaceMruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixInterfaceMruby.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixInterfaceMruby.framework; sourceTree = "<absolute>"; };
+		8DCB518B18C4AED30034A0AF /* MechatronixManufacturing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixManufacturing.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixManufacturing.framework; sourceTree = "<absolute>"; };
+		8DCB518C18C4AED30034A0AF /* MechatronixODE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixODE.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixODE.framework; sourceTree = "<absolute>"; };
+		8DCB518D18C4AED30034A0AF /* MechatronixRoad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixRoad.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixRoad.framework; sourceTree = "<absolute>"; };
+		8DCB518E18C4AED30034A0AF /* MechatronixSolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixSolver.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixSolver.framework; sourceTree = "<absolute>"; };
+		8DCB518F18C4AED30034A0AF /* MechatronixVehicle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixVehicle.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixVehicle.framework; sourceTree = "<absolute>"; };
+		8DE177D818C0E33500408C17 /* bicycle_DS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bicycle_DS; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE177E518C0E35700408C17 /* Bicycle_Main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle_Main.cc; sourceTree = "<group>"; };
+		8DE177E718C0E35700408C17 /* Bicycle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle.cc; sourceTree = "<group>"; };
+		8DE177E818C0E35700408C17 /* Bicycle.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bicycle.hh; sourceTree = "<group>"; };
+		8DE177E918C0E35700408C17 /* Bicycle_Methods.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle_Methods.cc; sourceTree = "<group>"; };
+		8DE177EA18C0E35700408C17 /* Bicycle_Pars.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bicycle_Pars.hh; sourceTree = "<group>"; };
+		8DE177EE18C0E36400408C17 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D94C1A7818E1C9F200B5E3B4 /* Bicycle_ruby_dll.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle_ruby_dll.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DE177D518C0E33500408C17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DCB519018C4AED30034A0AF /* MechatronixCore.framework in Frameworks */,
+				8DCB519118C4AED40034A0AF /* MechatronixInterfaceLua.framework in Frameworks */,
+				8DCB519218C4AED40034A0AF /* MechatronixInterfaceMruby.framework in Frameworks */,
+				8DCB519318C4AED40034A0AF /* MechatronixManufacturing.framework in Frameworks */,
+				8DCB519418C4AED40034A0AF /* MechatronixODE.framework in Frameworks */,
+				8DCB519518C4AED40034A0AF /* MechatronixRoad.framework in Frameworks */,
+				8DCB519618C4AED40034A0AF /* MechatronixSolver.framework in Frameworks */,
+				8DCB519718C4AED40034A0AF /* MechatronixVehicle.framework in Frameworks */,
+				8DE177EF18C0E36400408C17 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DE177CF18C0E33500408C17 = {
+			isa = PBXGroup;
+			children = (
+				8DCB518818C4AED30034A0AF /* MechatronixCore.framework */,
+				8DCB518918C4AED30034A0AF /* MechatronixInterfaceLua.framework */,
+				8DCB518A18C4AED30034A0AF /* MechatronixInterfaceMruby.framework */,
+				8DCB518B18C4AED30034A0AF /* MechatronixManufacturing.framework */,
+				8DCB518C18C4AED30034A0AF /* MechatronixODE.framework */,
+				8DCB518D18C4AED30034A0AF /* MechatronixRoad.framework */,
+				8DCB518E18C4AED30034A0AF /* MechatronixSolver.framework */,
+				8DCB518F18C4AED30034A0AF /* MechatronixVehicle.framework */,
+				8DE177EE18C0E36400408C17 /* Accelerate.framework */,
+				8DE177E418C0E35700408C17 /* ds-cpp */,
+				8DE177D918C0E33500408C17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DE177D918C0E33500408C17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DE177D818C0E33500408C17 /* bicycle_DS */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DE177E418C0E35700408C17 /* ds-cpp */ = {
+			isa = PBXGroup;
+			children = (
+				8DE177E518C0E35700408C17 /* Bicycle_Main.cc */,
+				8DE177E618C0E35700408C17 /* srcs */,
+			);
+			path = "ds-cpp";
+			sourceTree = "<group>";
+		};
+		8DE177E618C0E35700408C17 /* srcs */ = {
+			isa = PBXGroup;
+			children = (
+				8DE177E718C0E35700408C17 /* Bicycle.cc */,
+				8DE177E818C0E35700408C17 /* Bicycle.hh */,
+				8DE177E918C0E35700408C17 /* Bicycle_Methods.cc */,
+				8DE177EA18C0E35700408C17 /* Bicycle_Pars.hh */,
+				D94C1A7818E1C9F200B5E3B4 /* Bicycle_ruby_dll.cc */,
+			);
+			path = srcs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DE177D718C0E33500408C17 /* bicycle_DS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DE177E118C0E33500408C17 /* Build configuration list for PBXNativeTarget "bicycle_DS" */;
+			buildPhases = (
+				8DE177D418C0E33500408C17 /* Sources */,
+				8DE177D518C0E33500408C17 /* Frameworks */,
+				8DE177D618C0E33500408C17 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bicycle_DS;
+			productName = bicycle_DS;
+			productReference = 8DE177D818C0E33500408C17 /* bicycle_DS */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DE177D018C0E33500408C17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Francesco Biral";
+			};
+			buildConfigurationList = 8DE177D318C0E33500408C17 /* Build configuration list for PBXProject "bicycle_DS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8DE177CF18C0E33500408C17;
+			productRefGroup = 8DE177D918C0E33500408C17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DE177D718C0E33500408C17 /* bicycle_DS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DE177D418C0E33500408C17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE177EB18C0E35700408C17 /* Bicycle_Main.cc in Sources */,
+				8DE177EC18C0E35700408C17 /* Bicycle.cc in Sources */,
+				D94C1A7918E1C9F200B5E3B4 /* Bicycle_ruby_dll.cc in Sources */,
+				8DE177ED18C0E35700408C17 /* Bicycle_Methods.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8DE177DF18C0E33500408C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8DE177E018C0E33500408C17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8DE177E218C0E33500408C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8DE177E318C0E33500408C17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DE177D318C0E33500408C17 /* Build configuration list for PBXProject "bicycle_DS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE177DF18C0E33500408C17 /* Debug */,
+				8DE177E018C0E33500408C17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DE177E118C0E33500408C17 /* Build configuration list for PBXNativeTarget "bicycle_DS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE177E218C0E33500408C17 /* Debug */,
+				8DE177E318C0E33500408C17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DE177D018C0E33500408C17 /* Project object */;
+}
