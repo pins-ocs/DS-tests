@@ -156,7 +156,7 @@ with(LinearAlgebra):</Text-field>
 </Input>
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">#Describe(XOptima);</Text-field>
 </Input>
-<Output><Text-field style="Line Printed Output" layout="Line Printed Output">Module '     XOptima PINS-1.4.7-d044dirty', Copyright (C) B-cube Team -- University of Trento 2006-2015</Text-field>
+<Output><Text-field style="Line Printed Output" layout="Line Printed Output">Module '     XOptima PINS-1.4.7-d055dirty', Copyright (C) B-cube Team -- University of Trento 2006-2015</Text-field>
 </Output>
 </Group>
 <Group hide-input="false" labelreference="L11398" drawlabel="true">
@@ -250,7 +250,7 @@ Step 5, extract parameters
 --------------------------
 Reordered parameters</Text-field>
 </Output>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXJvd0dGJDZlbi1JI21pR0YkNiVRJGl3ZkYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RIixGJy9GNlEnbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjQvJSlzdHJldGNoeUdGQC8lKnN5bW1ldHJpY0dGQC8lKGxhcmdlb3BHRkAvJS5tb3ZhYmxlbGltaXRzR0ZALyUnYWNjZW50R0ZALyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRi82JVEnJnRhdTswRidGMkY1RjgtRi82JVEnQ2RlbHRhRidGMkY1RjgtRi82JVEpJm9tZWdhOzBGJ0YyRjVGOC1GLzYlUSRJZnpGJ0YyRjVGOC1GLzYlUSomZXBzaWxvbjtGJy9GM0ZARjxGOC1GLzYlUSJnRidGMkY1RjgtRi82JVEja0RGJ0YyRjVGOC1GLzYlUSRDcjJGJ0YyRjVGOC1GLzYlUSNyZkYnRjJGNUY4LUYvNiVRKCZzaWdtYTtGJ0Zcb0Y8RjgtRi82JVEjdTBGJ0YyRjVGOC1GLzYlUSRDcjFGJ0YyRjVGOC1GLzYlUSNhbkYnRjJGNUY4LUYvNiVRI0l6RidGMkY1RjgtRi82JVEiaEYnRjJGNUY4LUYvNiVRJEN4ekYnRjJGNUY4LUYvNiVRJENmMkYnRjJGNUY4LUYvNiVRIm1GJ0YyRjVGOC1GLzYlUSRpd3JGJ0YyRjVGOC1GLzYlUSRDZjFGJ0YyRjVGOC1GLzYlUSNJeEYnRjJGNUY4LUYvNiVRJFhyMEYnRjJGNUY4LUYvNiVRImJGJ0YyRjVGOC1GLzYlUSNJeUYnRjJGNUY4LUYvNiVRI3JyRidGMkY1RjgtRi82JVEjZjBGJ0YyRjVGOC1GLzYlUSJ3RidGMkY1LyUpcmVhZG9ubHlHRkBGPEY8LyUlb3BlbkdRJyZsc3FiO0YnLyUmY2xvc2VHUScmcnNxYjtGJw==">Nz5JJGl3Zkc2IkkldGF1MEdGJEknQ2RlbHRhR0YkSSdvbWVnYTBHRiRJJElmekdGJEkoZXBzaWxvbkdGJEkiZ0dGJEkja0RHRiRJJENyMkdGJEkjcmZHRiRJJnNpZ21hR0YkSSN1MEdGJEkkQ3IxR0YkSSNhbkdGJEkjSXpHRiRJImhHRiRJJEN4ekdGJEkkQ2YyR0YkSSJtR0YkSSRpd3JHRiRJJENmMUdGJEkjSXhHRiRJJFhyMEdGJEkiYkdGJEkjSXlHRiRJI3JyR0YkSSNmMEdGJEkid0dGJA==</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXJvd0dGJDZlbi1JI21pR0YkNiVRJ0NkZWx0YUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RIixGJy9GNlEnbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjQvJSlzdHJldGNoeUdGQC8lKnN5bW1ldHJpY0dGQC8lKGxhcmdlb3BHRkAvJS5tb3ZhYmxlbGltaXRzR0ZALyUnYWNjZW50R0ZALyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRi82JVEkWHIwRidGMkY1RjgtRi82JVEkaXdmRidGMkY1RjgtRi82JVEiYkYnRjJGNUY4LUYvNiVRImdGJ0YyRjVGOC1GLzYlUSRJZnpGJ0YyRjVGOC1GLzYlUSRDcjJGJ0YyRjVGOC1GLzYlUScmdGF1OzBGJ0YyRjVGOC1GLzYlUSNrREYnRjJGNUY4LUYvNiVRKCZzaWdtYTtGJy9GM0ZARjxGOC1GLzYlUSkmb21lZ2E7MEYnRjJGNUY4LUYvNiVRI3UwRidGMkY1RjgtRi82JVEjcmZGJ0YyRjVGOC1GLzYlUSNmMEYnRjJGNUY4LUYvNiVRImhGJ0YyRjVGOC1GLzYlUSNJekYnRjJGNUY4LUYvNiVRI2FuRidGMkY1RjgtRi82JVEkQ3IxRidGMkY1RjgtRi82JVEkaXdyRidGMkY1RjgtRi82JVEibUYnRjJGNUY4LUYvNiVRJENmMkYnRjJGNUY4LUYvNiVRJEN4ekYnRjJGNUY4LUYvNiVRI0l5RidGMkY1RjgtRi82JVEjSXhGJ0YyRjVGOC1GLzYlUSRDZjFGJ0YyRjVGOC1GLzYlUSomZXBzaWxvbjtGJ0Zob0Y8RjgtRi82JVEid0YnRjJGNUY4LUYvNiVRI3JyRidGMkY1LyUpcmVhZG9ubHlHRkBGPEY8LyUlb3BlbkdRJyZsc3FiO0YnLyUmY2xvc2VHUScmcnNxYjtGJw==">Nz5JJ0NkZWx0YUc2IkkkWHIwR0YkSSRpd2ZHRiRJImJHRiRJImdHRiRJJElmekdGJEkkQ3IyR0YkSSV0YXUwR0YkSSNrREdGJEkmc2lnbWFHRiRJJ29tZWdhMEdGJEkjdTBHRiRJI3JmR0YkSSNmMEdGJEkiaEdGJEkjSXpHRiRJI2FuR0YkSSRDcjFHRiRJJGl3ckdGJEkibUdGJEkkQ2YyR0YkSSRDeHpHRiRJI0l5R0YkSSNJeEdGJEkkQ2YxR0YkSShlcHNpbG9uR0YkSSJ3R0YkSSNyckdGJA==</Equation></Text-field>
 </Output>
 <Output><Text-field style="Line Printed Output" layout="Line Printed Output">THREE
 Model parameters:</Text-field>
@@ -270,15 +270,16 @@ Step 8, Write the C-Code of the User Defined functions
 
 Step 9, Write the C-Code for DS problem
 ---------------------------------------
-     9 : rhs</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output">    12 : steady_state_equations</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output">     9 : steady_state_x_guess
+     9 : rhs
+    12 : steady_state_equations</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output">     9 : steady_state_x_guess
      3 : steady_state_u_guess
      9 : initial_conditions
      0 : post_processing
-     3 : closed_loop
- 9 x 9 : A</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output">12 x 12: steady_state_DequationsDz</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output"> 3 x 9 : Dclosed_loopDx
- 9 x 9 : DetaDx
- 9 x 9 : DrhsDx
- 9 x 3 : DrhsDu</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output">
+     3 : closed_loop</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output"> 9 x 9 : A
+12 x 12: steady_state_DequationsDz</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output"> 3 x 9 : Dclosed_loopDx
+ 9 x 9 : DetaDx</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output"> 9 x 9 : DrhsDx
+ 9 x 3 : DrhsDu
+
 Step 10, Generate `code' files from templates
 ---------------------------------------------
 Command: &quot;/usr/local/bin/pins /Library/Frameworks/Maple.framework/Versions/2018/toolbox/XOptima/lib/../XOptima_GenerateCppCode_DS.rb Bicycle --exclude=[Bicycle_Data.lua,] --output_directory=../&quot;</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output">Project Bicycle generated correctly!

@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DCB519018C4AED30034A0AF /* MechatronixCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518818C4AED30034A0AF /* MechatronixCore.framework */; };
-		8DCB519118C4AED40034A0AF /* MechatronixInterfaceLua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518918C4AED30034A0AF /* MechatronixInterfaceLua.framework */; };
-		8DCB519218C4AED40034A0AF /* MechatronixInterfaceMruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518A18C4AED30034A0AF /* MechatronixInterfaceMruby.framework */; };
-		8DCB519318C4AED40034A0AF /* MechatronixManufacturing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518B18C4AED30034A0AF /* MechatronixManufacturing.framework */; };
-		8DCB519418C4AED40034A0AF /* MechatronixODE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518C18C4AED30034A0AF /* MechatronixODE.framework */; };
-		8DCB519518C4AED40034A0AF /* MechatronixRoad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518D18C4AED30034A0AF /* MechatronixRoad.framework */; };
-		8DCB519618C4AED40034A0AF /* MechatronixSolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518E18C4AED30034A0AF /* MechatronixSolver.framework */; };
-		8DCB519718C4AED40034A0AF /* MechatronixVehicle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DCB518F18C4AED30034A0AF /* MechatronixVehicle.framework */; };
-		8DE177EB18C0E35700408C17 /* Bicycle_Main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8DE177E518C0E35700408C17 /* Bicycle_Main.cc */; };
-		8DE177EC18C0E35700408C17 /* Bicycle.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8DE177E718C0E35700408C17 /* Bicycle.cc */; };
-		8DE177ED18C0E35700408C17 /* Bicycle_Methods.cc in Sources */ = {isa = PBXBuildFile; fileRef = 8DE177E918C0E35700408C17 /* Bicycle_Methods.cc */; };
-		8DE177EF18C0E36400408C17 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE177EE18C0E36400408C17 /* Accelerate.framework */; };
-		D94C1A7918E1C9F200B5E3B4 /* Bicycle_ruby_dll.cc in Sources */ = {isa = PBXBuildFile; fileRef = D94C1A7818E1C9F200B5E3B4 /* Bicycle_ruby_dll.cc */; };
+		D99DC8A5257176CD000798E9 /* MechatronixRoad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99DC89D257176CD000798E9 /* MechatronixRoad.framework */; };
+		D99DC8A6257176CD000798E9 /* MechatronixODE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99DC89E257176CD000798E9 /* MechatronixODE.framework */; };
+		D99DC8A7257176CD000798E9 /* MechatronixAstro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99DC89F257176CD000798E9 /* MechatronixAstro.framework */; };
+		D99DC8A8257176CD000798E9 /* MechatronixInterfaceMruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99DC8A0257176CD000798E9 /* MechatronixInterfaceMruby.framework */; };
+		D99DC8A9257176CD000798E9 /* MechatronixSolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99DC8A1257176CD000798E9 /* MechatronixSolver.framework */; };
+		D99DC8AA257176CD000798E9 /* MechatronixManufacturing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99DC8A2257176CD000798E9 /* MechatronixManufacturing.framework */; };
+		D99DC8AB257176CD000798E9 /* MechatronixVehicle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99DC8A3257176CD000798E9 /* MechatronixVehicle.framework */; };
+		D99DC8AC257176CD000798E9 /* MechatronixCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99DC8A4257176CD000798E9 /* MechatronixCore.framework */; };
+		D99DC8B3257176D6000798E9 /* Bicycle.cc in Sources */ = {isa = PBXBuildFile; fileRef = D99DC8AE257176D6000798E9 /* Bicycle.cc */; };
+		D99DC8B4257176D6000798E9 /* Bicycle_Methods.cc in Sources */ = {isa = PBXBuildFile; fileRef = D99DC8B0257176D6000798E9 /* Bicycle_Methods.cc */; };
+		D99DC8B5257176D6000798E9 /* Bicycle_mruby_dll.cc in Sources */ = {isa = PBXBuildFile; fileRef = D99DC8B1257176D6000798E9 /* Bicycle_mruby_dll.cc */; };
+		D99DC8B8257176E1000798E9 /* Bicycle_Main.cc in Sources */ = {isa = PBXBuildFile; fileRef = D99DC8B7257176E1000798E9 /* Bicycle_Main.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,22 +34,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8DCB518818C4AED30034A0AF /* MechatronixCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixCore.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixCore.framework; sourceTree = "<absolute>"; };
-		8DCB518918C4AED30034A0AF /* MechatronixInterfaceLua.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixInterfaceLua.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixInterfaceLua.framework; sourceTree = "<absolute>"; };
-		8DCB518A18C4AED30034A0AF /* MechatronixInterfaceMruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixInterfaceMruby.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixInterfaceMruby.framework; sourceTree = "<absolute>"; };
-		8DCB518B18C4AED30034A0AF /* MechatronixManufacturing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixManufacturing.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixManufacturing.framework; sourceTree = "<absolute>"; };
-		8DCB518C18C4AED30034A0AF /* MechatronixODE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixODE.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixODE.framework; sourceTree = "<absolute>"; };
-		8DCB518D18C4AED30034A0AF /* MechatronixRoad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixRoad.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixRoad.framework; sourceTree = "<absolute>"; };
-		8DCB518E18C4AED30034A0AF /* MechatronixSolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixSolver.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixSolver.framework; sourceTree = "<absolute>"; };
-		8DCB518F18C4AED30034A0AF /* MechatronixVehicle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixVehicle.framework; path = /Applications/Xcode.app/Contents/Developer/../../../../Library/Frameworks/MechatronixVehicle.framework; sourceTree = "<absolute>"; };
 		8DE177D818C0E33500408C17 /* bicycle_DS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = bicycle_DS; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DE177E518C0E35700408C17 /* Bicycle_Main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle_Main.cc; sourceTree = "<group>"; };
-		8DE177E718C0E35700408C17 /* Bicycle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle.cc; sourceTree = "<group>"; };
-		8DE177E818C0E35700408C17 /* Bicycle.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bicycle.hh; sourceTree = "<group>"; };
-		8DE177E918C0E35700408C17 /* Bicycle_Methods.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle_Methods.cc; sourceTree = "<group>"; };
-		8DE177EA18C0E35700408C17 /* Bicycle_Pars.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bicycle_Pars.hh; sourceTree = "<group>"; };
-		8DE177EE18C0E36400408C17 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		D94C1A7818E1C9F200B5E3B4 /* Bicycle_ruby_dll.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle_ruby_dll.cc; sourceTree = "<group>"; };
+		D99DC89D257176CD000798E9 /* MechatronixRoad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixRoad.framework; path = ../../../../../../../../../Library/Frameworks/MechatronixRoad.framework; sourceTree = "<group>"; };
+		D99DC89E257176CD000798E9 /* MechatronixODE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixODE.framework; path = ../../../../../../../../../Library/Frameworks/MechatronixODE.framework; sourceTree = "<group>"; };
+		D99DC89F257176CD000798E9 /* MechatronixAstro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixAstro.framework; path = ../../../../../../../../../Library/Frameworks/MechatronixAstro.framework; sourceTree = "<group>"; };
+		D99DC8A0257176CD000798E9 /* MechatronixInterfaceMruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixInterfaceMruby.framework; path = ../../../../../../../../../Library/Frameworks/MechatronixInterfaceMruby.framework; sourceTree = "<group>"; };
+		D99DC8A1257176CD000798E9 /* MechatronixSolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixSolver.framework; path = ../../../../../../../../../Library/Frameworks/MechatronixSolver.framework; sourceTree = "<group>"; };
+		D99DC8A2257176CD000798E9 /* MechatronixManufacturing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixManufacturing.framework; path = ../../../../../../../../../Library/Frameworks/MechatronixManufacturing.framework; sourceTree = "<group>"; };
+		D99DC8A3257176CD000798E9 /* MechatronixVehicle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixVehicle.framework; path = ../../../../../../../../../Library/Frameworks/MechatronixVehicle.framework; sourceTree = "<group>"; };
+		D99DC8A4257176CD000798E9 /* MechatronixCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MechatronixCore.framework; path = ../../../../../../../../../Library/Frameworks/MechatronixCore.framework; sourceTree = "<group>"; };
+		D99DC8AE257176D6000798E9 /* Bicycle.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle.cc; sourceTree = "<group>"; };
+		D99DC8AF257176D6000798E9 /* Bicycle.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bicycle.hh; sourceTree = "<group>"; };
+		D99DC8B0257176D6000798E9 /* Bicycle_Methods.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle_Methods.cc; sourceTree = "<group>"; };
+		D99DC8B1257176D6000798E9 /* Bicycle_mruby_dll.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bicycle_mruby_dll.cc; sourceTree = "<group>"; };
+		D99DC8B2257176D6000798E9 /* Bicycle_Pars.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bicycle_Pars.hh; sourceTree = "<group>"; };
+		D99DC8B7257176E1000798E9 /* Bicycle_Main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bicycle_Main.cc; path = "ds-interfaces/cpp/Bicycle_Main.cc"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +56,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DCB519018C4AED30034A0AF /* MechatronixCore.framework in Frameworks */,
-				8DCB519118C4AED40034A0AF /* MechatronixInterfaceLua.framework in Frameworks */,
-				8DCB519218C4AED40034A0AF /* MechatronixInterfaceMruby.framework in Frameworks */,
-				8DCB519318C4AED40034A0AF /* MechatronixManufacturing.framework in Frameworks */,
-				8DCB519418C4AED40034A0AF /* MechatronixODE.framework in Frameworks */,
-				8DCB519518C4AED40034A0AF /* MechatronixRoad.framework in Frameworks */,
-				8DCB519618C4AED40034A0AF /* MechatronixSolver.framework in Frameworks */,
-				8DCB519718C4AED40034A0AF /* MechatronixVehicle.framework in Frameworks */,
-				8DE177EF18C0E36400408C17 /* Accelerate.framework in Frameworks */,
+				D99DC8AC257176CD000798E9 /* MechatronixCore.framework in Frameworks */,
+				D99DC8A6257176CD000798E9 /* MechatronixODE.framework in Frameworks */,
+				D99DC8A8257176CD000798E9 /* MechatronixInterfaceMruby.framework in Frameworks */,
+				D99DC8AA257176CD000798E9 /* MechatronixManufacturing.framework in Frameworks */,
+				D99DC8A7257176CD000798E9 /* MechatronixAstro.framework in Frameworks */,
+				D99DC8A9257176CD000798E9 /* MechatronixSolver.framework in Frameworks */,
+				D99DC8AB257176CD000798E9 /* MechatronixVehicle.framework in Frameworks */,
+				D99DC8A5257176CD000798E9 /* MechatronixRoad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,16 +73,16 @@
 		8DE177CF18C0E33500408C17 = {
 			isa = PBXGroup;
 			children = (
-				8DCB518818C4AED30034A0AF /* MechatronixCore.framework */,
-				8DCB518918C4AED30034A0AF /* MechatronixInterfaceLua.framework */,
-				8DCB518A18C4AED30034A0AF /* MechatronixInterfaceMruby.framework */,
-				8DCB518B18C4AED30034A0AF /* MechatronixManufacturing.framework */,
-				8DCB518C18C4AED30034A0AF /* MechatronixODE.framework */,
-				8DCB518D18C4AED30034A0AF /* MechatronixRoad.framework */,
-				8DCB518E18C4AED30034A0AF /* MechatronixSolver.framework */,
-				8DCB518F18C4AED30034A0AF /* MechatronixVehicle.framework */,
-				8DE177EE18C0E36400408C17 /* Accelerate.framework */,
-				8DE177E418C0E35700408C17 /* ds-cpp */,
+				D99DC89F257176CD000798E9 /* MechatronixAstro.framework */,
+				D99DC8A4257176CD000798E9 /* MechatronixCore.framework */,
+				D99DC8A0257176CD000798E9 /* MechatronixInterfaceMruby.framework */,
+				D99DC8A2257176CD000798E9 /* MechatronixManufacturing.framework */,
+				D99DC89E257176CD000798E9 /* MechatronixODE.framework */,
+				D99DC89D257176CD000798E9 /* MechatronixRoad.framework */,
+				D99DC8A1257176CD000798E9 /* MechatronixSolver.framework */,
+				D99DC8A3257176CD000798E9 /* MechatronixVehicle.framework */,
+				D99DC8B7257176E1000798E9 /* Bicycle_Main.cc */,
+				D99DC8AD257176D6000798E9 /* ds-src */,
 				8DE177D918C0E33500408C17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,25 +95,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8DE177E418C0E35700408C17 /* ds-cpp */ = {
+		D99DC8AD257176D6000798E9 /* ds-src */ = {
 			isa = PBXGroup;
 			children = (
-				8DE177E518C0E35700408C17 /* Bicycle_Main.cc */,
-				8DE177E618C0E35700408C17 /* srcs */,
+				D99DC8AE257176D6000798E9 /* Bicycle.cc */,
+				D99DC8AF257176D6000798E9 /* Bicycle.hh */,
+				D99DC8B0257176D6000798E9 /* Bicycle_Methods.cc */,
+				D99DC8B1257176D6000798E9 /* Bicycle_mruby_dll.cc */,
+				D99DC8B2257176D6000798E9 /* Bicycle_Pars.hh */,
 			);
-			path = "ds-cpp";
-			sourceTree = "<group>";
-		};
-		8DE177E618C0E35700408C17 /* srcs */ = {
-			isa = PBXGroup;
-			children = (
-				8DE177E718C0E35700408C17 /* Bicycle.cc */,
-				8DE177E818C0E35700408C17 /* Bicycle.hh */,
-				8DE177E918C0E35700408C17 /* Bicycle_Methods.cc */,
-				8DE177EA18C0E35700408C17 /* Bicycle_Pars.hh */,
-				D94C1A7818E1C9F200B5E3B4 /* Bicycle_ruby_dll.cc */,
-			);
-			path = srcs;
+			path = "ds-src";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,15 +133,16 @@
 		8DE177D018C0E33500408C17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Francesco Biral";
 			};
 			buildConfigurationList = 8DE177D318C0E33500408C17 /* Build configuration list for PBXProject "bicycle_DS" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 8DE177CF18C0E33500408C17;
 			productRefGroup = 8DE177D918C0E33500408C17 /* Products */;
@@ -170,10 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE177EB18C0E35700408C17 /* Bicycle_Main.cc in Sources */,
-				8DE177EC18C0E35700408C17 /* Bicycle.cc in Sources */,
-				D94C1A7918E1C9F200B5E3B4 /* Bicycle_ruby_dll.cc in Sources */,
-				8DE177ED18C0E35700408C17 /* Bicycle_Methods.cc in Sources */,
+				D99DC8B5257176D6000798E9 /* Bicycle_mruby_dll.cc in Sources */,
+				D99DC8B4257176D6000798E9 /* Bicycle_Methods.cc in Sources */,
+				D99DC8B8257176E1000798E9 /* Bicycle_Main.cc in Sources */,
+				D99DC8B3257176D6000798E9 /* Bicycle.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,21 +173,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -221,22 +226,37 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -251,6 +271,7 @@
 		8DE177E218C0E33500408C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -262,6 +283,7 @@
 		8DE177E318C0E33500408C17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
