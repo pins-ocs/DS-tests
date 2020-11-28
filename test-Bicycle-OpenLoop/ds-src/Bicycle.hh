@@ -62,13 +62,13 @@ namespace BicycleDefine {
     //  _> |_(/_(_|(_|\/ _> |_(_| |_(/_
     //                /
     class NonlinearSystem : public Mechatronix::NonlinearSystemBase {
-      Bicycle * pNLSYS;
+      Bicycle * m_NLSYS;
     public:
       BICYCLE_API_DLL
       explicit
-      NonlinearSystem( string const & name, Bicycle * _pNLSYS )
+      NonlinearSystem( string const & name, Bicycle * NLSYS )
       : Mechatronix::NonlinearSystemBase(name)
-      , pNLSYS(_pNLSYS) {}
+      , m_NLSYS(NLSYS) {}
 
       BICYCLE_API_DLL
       virtual ~NonlinearSystem() {}
@@ -345,8 +345,7 @@ namespace BicycleDefine {
     //
     BICYCLE_API_DLL
     bool
-    solve_steady_state( GenericContainer & gc, GenericContainer & gc_sol );
-
+    solve_steady_state( GenericContainer & gc_data, GenericContainer & gc_sol );
   };
 }
 

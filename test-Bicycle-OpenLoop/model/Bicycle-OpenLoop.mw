@@ -250,7 +250,7 @@ Step 5, extract parameters
 --------------------------
 Reordered parameters</Text-field>
 </Output>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXJvd0dGJDZlbi1JI21pR0YkNiVRJ0NkZWx0YUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RIixGJy9GNlEnbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjQvJSlzdHJldGNoeUdGQC8lKnN5bW1ldHJpY0dGQC8lKGxhcmdlb3BHRkAvJS5tb3ZhYmxlbGltaXRzR0ZALyUnYWNjZW50R0ZALyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRi82JVEkWHIwRidGMkY1RjgtRi82JVEkaXdmRidGMkY1RjgtRi82JVEiYkYnRjJGNUY4LUYvNiVRImdGJ0YyRjVGOC1GLzYlUSRJZnpGJ0YyRjVGOC1GLzYlUSRDcjJGJ0YyRjVGOC1GLzYlUScmdGF1OzBGJ0YyRjVGOC1GLzYlUSNrREYnRjJGNUY4LUYvNiVRKCZzaWdtYTtGJy9GM0ZARjxGOC1GLzYlUSkmb21lZ2E7MEYnRjJGNUY4LUYvNiVRI3UwRidGMkY1RjgtRi82JVEjcmZGJ0YyRjVGOC1GLzYlUSNmMEYnRjJGNUY4LUYvNiVRImhGJ0YyRjVGOC1GLzYlUSNJekYnRjJGNUY4LUYvNiVRI2FuRidGMkY1RjgtRi82JVEkQ3IxRidGMkY1RjgtRi82JVEkaXdyRidGMkY1RjgtRi82JVEibUYnRjJGNUY4LUYvNiVRJENmMkYnRjJGNUY4LUYvNiVRJEN4ekYnRjJGNUY4LUYvNiVRI0l5RidGMkY1RjgtRi82JVEjSXhGJ0YyRjVGOC1GLzYlUSRDZjFGJ0YyRjVGOC1GLzYlUSomZXBzaWxvbjtGJ0Zob0Y8RjgtRi82JVEid0YnRjJGNUY4LUYvNiVRI3JyRidGMkY1LyUpcmVhZG9ubHlHRkBGPEY8LyUlb3BlbkdRJyZsc3FiO0YnLyUmY2xvc2VHUScmcnNxYjtGJw==">Nz5JJ0NkZWx0YUc2IkkkWHIwR0YkSSRpd2ZHRiRJImJHRiRJImdHRiRJJElmekdGJEkkQ3IyR0YkSSV0YXUwR0YkSSNrREdGJEkmc2lnbWFHRiRJJ29tZWdhMEdGJEkjdTBHRiRJI3JmR0YkSSNmMEdGJEkiaEdGJEkjSXpHRiRJI2FuR0YkSSRDcjFHRiRJJGl3ckdGJEkibUdGJEkkQ2YyR0YkSSRDeHpHRiRJI0l5R0YkSSNJeEdGJEkkQ2YxR0YkSShlcHNpbG9uR0YkSSJ3R0YkSSNyckdGJA==</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXJvd0dGJDZlbi1JI21pR0YkNiVRJGl3ZkYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RIixGJy9GNlEnbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjQvJSlzdHJldGNoeUdGQC8lKnN5bW1ldHJpY0dGQC8lKGxhcmdlb3BHRkAvJS5tb3ZhYmxlbGltaXRzR0ZALyUnYWNjZW50R0ZALyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRi82JVEnQ2RlbHRhRidGMkY1RjgtRi82JVEkSWZ6RidGMkY1RjgtRi82JVEiZ0YnRjJGNUY4LUYvNiVRJFhyMEYnRjJGNUY4LUYvNiVRI2tERidGMkY1RjgtRi82JVEpJm9tZWdhOzBGJ0YyRjVGOC1GLzYlUSJiRidGMkY1RjgtRi82JVEjZjBGJ0YyRjVGOC1GLzYlUSRDcjJGJ0YyRjVGOC1GLzYlUSNyZkYnRjJGNUY4LUYvNiVRI3UwRidGMkY1RjgtRi82JVEoJnNpZ21hO0YnL0YzRkBGPEY4LUYvNiVRJyZ0YXU7MEYnRjJGNUY4LUYvNiVRJENyMUYnRjJGNUY4LUYvNiVRI2FuRidGMkY1RjgtRi82JVEjSXpGJ0YyRjVGOC1GLzYlUSJoRidGMkY1RjgtRi82JVEkQ3h6RidGMkY1RjgtRi82JVEkQ2YyRidGMkY1RjgtRi82JVEqJmVwc2lsb247RidGYXBGPEY4LUYvNiVRIm1GJ0YyRjVGOC1GLzYlUSRpd3JGJ0YyRjVGOC1GLzYlUSRDZjFGJ0YyRjVGOC1GLzYlUSNJeEYnRjJGNUY4LUYvNiVRI0l5RidGMkY1RjgtRi82JVEjcnJGJ0YyRjVGOC1GLzYlUSJ3RidGMkY1LyUpcmVhZG9ubHlHRkBGPEY8LyUlb3BlbkdRJyZsc3FiO0YnLyUmY2xvc2VHUScmcnNxYjtGJw==">Nz5JJGl3Zkc2IkknQ2RlbHRhR0YkSSRJZnpHRiRJImdHRiRJJFhyMEdGJEkja0RHRiRJJ29tZWdhMEdGJEkiYkdGJEkjZjBHRiRJJENyMkdGJEkjcmZHRiRJI3UwR0YkSSZzaWdtYUdGJEkldGF1MEdGJEkkQ3IxR0YkSSNhbkdGJEkjSXpHRiRJImhHRiRJJEN4ekdGJEkkQ2YyR0YkSShlcHNpbG9uR0YkSSJtR0YkSSRpd3JHRiRJJENmMUdGJEkjSXhHRiRJI0l5R0YkSSNyckdGJEkid0dGJA==</Equation></Text-field>
 </Output>
 <Output><Text-field style="Line Printed Output" layout="Line Printed Output">THREE
 Model parameters:</Text-field>
@@ -275,10 +275,10 @@ Step 9, Write the C-Code for DS problem
      3 : steady_state_u_guess
      9 : initial_conditions
      0 : post_processing
-     3 : closed_loop</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output"> 9 x 9 : A
-12 x 12: steady_state_DequationsDz</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output"> 3 x 9 : Dclosed_loopDx
- 9 x 9 : DetaDx</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output"> 9 x 9 : DrhsDx
- 9 x 3 : DrhsDu
+     3 : closed_loop
+ 9 x 9 : A</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output">12 x 12: steady_state_DequationsDz</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output"> 3 x 9 : Dclosed_loopDx
+ 9 x 9 : DetaDx
+ 9 x 9 : DrhsDx</Text-field><Text-field style="Line Printed Output" layout="Line Printed Output"> 9 x 3 : DrhsDu
 
 Step 10, Generate `code' files from templates
 ---------------------------------------------
@@ -293,7 +293,13 @@ Deleting unnecessary files!</Text-field>
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
-<Group labelreference="L11407" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-input="false" labelreference="L11407" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">ls</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbWlHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JVEjbHNGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRic=">SSNsc0c2Ig==</Equation></Text-field>
+</Output>
+</Group>
+<Group labelreference="L11408" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>

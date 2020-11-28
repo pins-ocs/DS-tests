@@ -122,8 +122,10 @@ public:
 
   // ---------------------------------------------------------------------
   void
-  init_ODE( GenericContainer & odeData,
-            GenericContainer & odeSol ) {
+  init_ODE(
+    GenericContainer & odeData,
+    GenericContainer & odeSol
+  ) {
     try {
       // Setup ode integrator with dynamic model parameters
       ODEsolver.setup( &model );
@@ -153,8 +155,10 @@ public:
 
   // ---------------------------------------------------------------------
   void
-  solve_ODE( GenericContainer & odeData,
-             GenericContainer & odeSol ) {
+  solve_ODE(
+    GenericContainer & odeData,
+    GenericContainer & odeSol
+  ) {
     try {
       GenericContainer & odeSolver_gc = odeData("OdeSolver");
       real_type dt = odeSolver_gc("integration_step").get_number();
@@ -178,9 +182,12 @@ public:
     }
   }
 
+  // ---------------------------------------------------------------------
   void
-  solve_steady_state( GenericContainer & gc_data,
-                      GenericContainer & gc_solution ) {
+  solve_steady_state(
+    GenericContainer & gc_data,
+    GenericContainer & gc_solution
+  ) {
     gc_solution["Error"] = ""; // no error found
     try {
 
@@ -200,9 +207,10 @@ public:
 
 };
 
+// ---------------------------------------------------------------------
+
 static map< string, Bicycle_Problem * > problems;
-static Console    * pConsole = nullptr;
-static ThreadPool * pTP      = nullptr;
+static Console console(&std::cout,4);
 
 /*
 ::  ____        _             _____ _____ ___
@@ -224,33 +232,41 @@ bool
 Bicycle_ds_setup( char const id[], GenericContainer & gc_data ) {
   map< string, Bicycle_Problem * >::iterator it = problems.find(id);
   if ( it == problems.end() ) {
-    problems[id] = new Bicycle_Problem(pConsole);
+    problems[id] = new Bicycle_Problem(&console);
     return problems[id]->setup(gc_data);
   } else {
     return it->second->setup(gc_data);
   }
 }
 
-EXTERN_C
-BICYCLE_API_DLL
-void
-Bicycle_ds_solve_steady_state( char const id[],
-                               GenericContainer & gc_data,
-                               GenericContainer & gc_solution ) {
-  map< string, Bicycle_Problem * >::iterator it = problems.find(id);
-  if ( it == problems.end() ) {
-    gc_solution["Error"] = "Bicycle_ds_solve_steady_state, missing call to Bicycle_ds_setup!";
-  } else {
-    it->second->solve_steady_state(gc_data,gc_solution);
-  }
-}
+// ---------------------------------------------------------------------
 
 EXTERN_C
 BICYCLE_API_DLL
 void
-Bicycle_ds_solve_ODE( char const id[],
-                      GenericContainer & gc_data,
-                      GenericContainer & gc_solution ) {
+Bicycle_ds_solve_steady_state(
+  char const         id[],
+  GenericContainer & gc_data,
+  GenericContainer & gc_solution
+) {
+  map< string, Bicycle_Problem * >::iterator it = problems.find(id);
+  if ( it == problems.end() ) {
+    gc_solution["Error"] = "Bicycle_ds_solve_steady_state, missing call to Bicycle_ds_setup!";
+  } else {
+    it->second->solve_steady_state( gc_data, gc_solution );
+  }
+}
+
+// ---------------------------------------------------------------------
+
+EXTERN_C
+BICYCLE_API_DLL
+void
+Bicycle_ds_solve_ODE(
+  char const         id[],
+  GenericContainer & gc_data,
+  GenericContainer & gc_solution
+) {
   map< string, Bicycle_Problem * >::iterator it = problems.find(id);
   if ( it == problems.end() ) {
     gc_solution["Error"] = "Bicycle_ds_solve_ODE, missing call to Bicycle_ds_setup!";
@@ -259,11 +275,15 @@ Bicycle_ds_solve_ODE( char const id[],
   }
 }
 
+// ---------------------------------------------------------------------
+
 EXTERN_C
 BICYCLE_API_DLL
 void
-Bicycle_ds_get_initial_condition( char const id[],
-                                  GenericContainer & gc_init ) {
+Bicycle_ds_get_initial_condition(
+  char const         id[],
+  GenericContainer & gc_init
+) {
   map< string, Bicycle_Problem * >::iterator it = problems.find(id);
   if ( it == problems.end() ) {
     gc_init["Error"] = "Bicycle_ds_get_initial_condition, missing call to Bicycle_ds_setup!";
@@ -272,12 +292,16 @@ Bicycle_ds_get_initial_condition( char const id[],
   }
 }
 
+// ---------------------------------------------------------------------
+
 EXTERN_C
 BICYCLE_API_DLL
 void
-Bicycle_ds_init_ODE( char const         id[],
-                     GenericContainer & odeData,
-                     GenericContainer & odeSol ) {
+Bicycle_ds_init_ODE(
+  char const         id[],
+  GenericContainer & odeData,
+  GenericContainer & odeSol
+) {
   map< string, Bicycle_Problem * >::iterator it = problems.find(id);
   if ( it == problems.end() ) {
     odeSol["Error"] = "Bicycle_ds_init_ODE, missing call to Bicycle_ds_setup!";
@@ -286,12 +310,16 @@ Bicycle_ds_init_ODE( char const         id[],
   }
 }
 
+// ---------------------------------------------------------------------
+
 EXTERN_C
 BICYCLE_API_DLL
 void
-Bicycle_ds_step_ODE( char const         id[],
-                     real_type          t,
-                     GenericContainer & odeSol ) {
+Bicycle_ds_step_ODE(
+  char const         id[],
+  real_type          t,
+  GenericContainer & odeSol
+) {
   map< string, Bicycle_Problem * >::iterator it = problems.find(id);
   if ( it == problems.end() ) {
     odeSol["Error"] = "Bicycle_ds_step_ODE, missing call to Bicycle_ds_setup!";
@@ -328,7 +356,7 @@ mrb_Bicycle_ds_solve_steady_state( mrb_state *mrb, mrb_value self ) {
   if ( it == problems.end() ) {
     gc_solution["Error"] = "Bicycle_ds_solve_steady_state, missing call to Bicycle_ds_setup!";
   } else {
-    it->second->solve_steady_state(gc_data,gc_solution);
+    it->second->solve_steady_state( gc_data, gc_solution );
   }
 
   // return values
@@ -337,6 +365,8 @@ mrb_Bicycle_ds_solve_steady_state( mrb_state *mrb, mrb_value self ) {
   mrb_iv_set(mrb, self, mrb_intern_cstr(mrb, "@stationary_solution" ), res);
   return res;
 }
+
+// ---------------------------------------------------------------------
 
 EXTERN_C
 BICYCLE_API_DLL
@@ -357,7 +387,7 @@ mrb_Bicycle_ds_setup( mrb_state *mrb, mrb_value self ) {
   bool ok;
   map< string, Bicycle_Problem * >::iterator it = problems.find(id);
   if ( it == problems.end() ) {
-    problems[id] = new Bicycle_Problem(pConsole);
+    problems[id] = new Bicycle_Problem(&console);
     ok = problems[id]->setup(gc_data);
   } else {
     ok = it->second->setup(gc_data);
@@ -365,12 +395,14 @@ mrb_Bicycle_ds_setup( mrb_state *mrb, mrb_value self ) {
 
   // return values
   if ( ok ) {
-    return mrb_str_new_cstr(mrb, gc_data("output_msg").get_string().c_str());
+    return mrb_true_value();
   } else {
     mrb_raise(mrb, mrb_class_get(mrb, "RuntimeError"), gc_data("Error").get_string().c_str());
     return mrb_false_value();
   }
 }
+
+// ---------------------------------------------------------------------
 
 EXTERN_C
 BICYCLE_API_DLL
@@ -401,6 +433,8 @@ mrb_Bicycle_ds_init_ODE( mrb_state *mrb, mrb_value self ) {
   return res;
 }
 
+// ---------------------------------------------------------------------
+
 EXTERN_C
 BICYCLE_API_DLL
 mrb_value
@@ -429,6 +463,8 @@ mrb_Bicycle_ds_step_ODE( mrb_state *mrb, mrb_value self ) {
   Mechatronix::mrb_from_GC( mrb, odeSol, res, "mrb_from_GC:" );
   return res;
 }
+
+// ---------------------------------------------------------------------
 
 EXTERN_C
 BICYCLE_API_DLL
@@ -460,6 +496,8 @@ mrb_Bicycle_ds_solve_ODE( mrb_state *mrb, mrb_value self ) {
   return res;
 }
 
+// ---------------------------------------------------------------------
+
 EXTERN_C
 BICYCLE_API_DLL
 mrb_value
@@ -490,6 +528,7 @@ mrb_Bicycle_ds_get_initial_condition( mrb_state *mrb, mrb_value self ) {
   return res;
 }
 
+// ---------------------------------------------------------------------
 
 EXTERN_C
 BICYCLE_API_DLL
@@ -509,6 +548,8 @@ mrb_libBicycle_gem_init(mrb_state* mrb)
   mrb_define_method(mrb, ds_class, "solve_ODE",             mrb_Bicycle_ds_solve_ODE,             MRB_ARGS_NONE());
   mrb_define_method(mrb, ds_class, "get_initial_condition", mrb_Bicycle_ds_get_initial_condition, MRB_ARGS_NONE());
 }
+
+// ---------------------------------------------------------------------
 
 EXTERN_C
 BICYCLE_API_DLL

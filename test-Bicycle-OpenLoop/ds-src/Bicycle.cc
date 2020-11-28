@@ -134,7 +134,7 @@ namespace BicycleDefine {
   // Continuation (NOT USED)
   void
   Bicycle::NonlinearSystem::updateContinuation(
-    integer phase,
+    integer   phase,
     real_type s
   ) {
     /* NOT USED */
@@ -233,11 +233,11 @@ namespace BicycleDefine {
   //                     |_|  |_|         |___/
   integer
   Bicycle::NonlinearSystem::numEquations(void) const
-  { return pNLSYS->steady_state_equations_numEqns(); }
+  { return m_NLSYS->steady_state_equations_numEqns(); }
 
   void
   Bicycle::NonlinearSystem::initialGuess( real_type x[] )
-  { pNLSYS->get_steady_state_default_guess( pNLSYS->m_zeta0, x, x+numXvars ); }
+  { m_NLSYS->get_steady_state_default_guess( m_NLSYS->m_zeta0, x, x+numXvars ); }
 
   bool
   Bicycle::NonlinearSystem::checkIfAdmissible( real_type const x[] ) const
@@ -248,7 +248,7 @@ namespace BicycleDefine {
     real_type const x[],
     real_type       F[]
   ) {
-    return pNLSYS->steady_state_equations( pNLSYS->m_zeta0, x, F );
+    return m_NLSYS->steady_state_equations( m_NLSYS->m_zeta0, x, F );
   }
 
   integer
@@ -263,27 +263,27 @@ namespace BicycleDefine {
   Bicycle::NonlinearSystem::loadJacobian(
     real_type const x[]
   ) {
-    pNLSYS->steady_state_DequationsDz_sparse(
-      pNLSYS->m_zeta0, x, pNLSYS->m_DeqDz_sparse_vals
+    m_NLSYS->steady_state_DequationsDz_sparse(
+      m_NLSYS->m_zeta0, x, m_NLSYS->m_DeqDz_sparse_vals
     );
-    pNLSYS->m_A.zero_fill();
-    pNLSYS->m_A.load(
-      pNLSYS->m_DeqDz_sparse.rows,
-      pNLSYS->m_DeqDz_sparse.cols,
-      pNLSYS->m_DeqDz_sparse_vals,
-      pNLSYS->m_DeqDz_sparse.nnz
+    m_NLSYS->m_A.zero_fill();
+    m_NLSYS->m_A.load(
+      m_NLSYS->m_DeqDz_sparse.rows,
+      m_NLSYS->m_DeqDz_sparse.cols,
+      m_NLSYS->m_DeqDz_sparse_vals,
+      m_NLSYS->m_DeqDz_sparse.nnz
     );
     return true;
   }
 
   bool
   Bicycle::NonlinearSystem::factorizeJacobian() {
-    return pNLSYS->m_lu.factorize( pNLSYS->m_A.data(), pNLSYS->m_A.lDim() );
+    return m_NLSYS->m_lu.factorize( m_NLSYS->m_A.data(), m_NLSYS->m_A.lDim() );
   }
 
   bool
   Bicycle::NonlinearSystem::solveJacobianSystem ( real_type inout[] ) {
-    return pNLSYS->m_lu.solve( inout );
+    return m_NLSYS->m_lu.solve( inout );
   }
 
   /*
@@ -295,8 +295,10 @@ namespace BicycleDefine {
   */
   // --------------------------------------------------------------------------
   bool
-  Bicycle::solve_steady_state( GenericContainer & gc,
-                               GenericContainer & gc_sol ) {
+  Bicycle::solve_steady_state(
+    GenericContainer & gc_data,
+    GenericContainer & gc_sol
+  ) {
     bool ok = true;
     gc_sol["converged"]  = false;
     gc_sol["iterations"] = 0;
@@ -304,7 +306,7 @@ namespace BicycleDefine {
     try {
 
       // setup model
-      this->setup( gc );
+      this->setup( gc_data );
 
       // compute steady state solution
       this->compute_steady_state();
